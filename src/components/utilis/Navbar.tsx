@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link
-                to="#"
+                to="/team"
                 className="block text-lg py-2 pl-3 pr-4 text-white border-b border-gray-100 hover:bg-gray-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0"
               >
                 Team
