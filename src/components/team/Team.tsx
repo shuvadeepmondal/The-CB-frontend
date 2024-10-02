@@ -22,29 +22,32 @@ const teamMembers: TeamMember[] = [
     githubUrl: "https://github.com/alicej",
     linkedinUrl: "https://linkedin.com/in/alicej",
   },
-//   {
-//     name: "Bob Smith",
-//     role: "CTO",
-//     imageUrl: "/placeholder.svg?height=100&width=100",
-//     profileImage: "/profile-placeholder.svg?height=200&width=200",
-//     githubUrl: "https://github.com/bobs",
-//     linkedinUrl: "https://linkedin.com/in/bobs",
-//   },
-//   {
-//     name: "Carol Williams",
-//     role: "Head of Design",
-//     imageUrl: "/placeholder.svg?height=100&width=100",
-//     profileImage: "/profile-placeholder.svg?height=200&width=200",
-//     linkedinUrl: "https://linkedin.com/in/carolw",
-//   },
-//   {
-//     name: "David Brown",
-//     role: "Lead Developer",
-//     imageUrl: "/placeholder.svg?height=100&width=100",
-//     profileImage: "/profile-placeholder.svg?height=200&width=200",
-//     githubUrl: "https://github.com/davidb",
-//     linkedinUrl: "https://linkedin.com/in/davidb",
-//   },
+  {
+    name: "Bob Smith",
+    role: "CTO",
+    qua: "Mr Allin1",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+    profileImage: "/profile-placeholder.svg?height=200&width=200",
+    githubUrl: "https://github.com/bobs",
+    linkedinUrl: "https://linkedin.com/in/bobs",
+  },
+  {
+    name: "Carol Williams",
+    role: "Head of Design",
+    qua: "Mr Designer",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+    profileImage: "/profile-placeholder.svg?height=200&width=200",
+    linkedinUrl: "https://linkedin.com/in/carolw",
+  },
+  {
+    name: "David Brown",
+    role: "Lead Developer",
+    qua: "Mr developer",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+    profileImage: "/profile-placeholder.svg?height=200&width=200",
+    githubUrl: "https://github.com/davidb",
+    linkedinUrl: "https://linkedin.com/in/davidb",
+  },
 ]
 
 export default function Component() {
@@ -53,8 +56,8 @@ export default function Component() {
       <Particlebg />
     <section className="py-12">
     <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-semibold text-center text-gray-800 mb-12">
-          Meet Our Team of Professionals
+        <h2 className="text-5xl font-semibold text-center mt-10 mb-12">
+          Meet Our Core Team
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
