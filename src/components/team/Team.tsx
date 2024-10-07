@@ -15,7 +15,7 @@ type TeamMember = {
 const teamMembers: TeamMember[] = [
   {
     name: "Puskar Roy",
-    role: "Pepsudent",
+    role: "President",
     qua : "Mr techie",
     imageUrl: "https://scontent.frdp4-1.fna.fbcdn.net/v/t39.30808-6/304193974_469757321834141_9002636552499298279_n.png?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=A37yc4awF7gQ7kNvgEV2QXY&_nc_ht=scontent.frdp4-1.fna&_nc_gid=ANXmViCMq3WaySynOH31APR&oh=00_AYCeORRKxXSCmdoNZ_GKpyXW0Hkt1QTFf4Go8xLzEBZeOw&oe=66FEC7C3",
     profileImage: "https://stkabir.co.in/wp-content/uploads/2022/07/Saahir-Dhawan.jpg", // New image to replace description
@@ -23,26 +23,44 @@ const teamMembers: TeamMember[] = [
     linkedinUrl: "https://linkedin.com/in/alicej",
   },
   {
-    name: "Bob Smith",
-    role: "CTO",
-    qua: "Mr Allin1",
+    name: "Saswata Som",
+    role: "Secretary",
+    qua: "Social Worker",
     imageUrl: "/placeholder.svg?height=100&width=100",
     profileImage: "/profile-placeholder.svg?height=200&width=200",
     githubUrl: "https://github.com/bobs",
     linkedinUrl: "https://linkedin.com/in/bobs",
   },
   {
-    name: "Carol Williams",
-    role: "Head of Design",
-    qua: "Mr Designer",
+    name: "Nayanika Mukherjee",
+    role: "Event Team Lead",
+    qua: "Miss Techie",
     imageUrl: "/placeholder.svg?height=100&width=100",
     profileImage: "/profile-placeholder.svg?height=200&width=200",
     linkedinUrl: "https://linkedin.com/in/carolw",
   },
   {
-    name: "David Brown",
-    role: "Lead Developer",
+    name: "Shuvadeep Mondal",
+    role: "Design Team Lead",
     qua: "Mr developer",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+    profileImage: "/profile-placeholder.svg?height=200&width=200",
+    githubUrl: "https://github.com/davidb",
+    linkedinUrl: "https://linkedin.com/in/davidb",
+  },
+  {
+    name: "Pujan Sarkar",
+    role: "Media Team Lead",
+    qua: "Mr Handler",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+    profileImage: "/profile-placeholder.svg?height=200&width=200",
+    githubUrl: "https://github.com/davidb",
+    linkedinUrl: "https://linkedin.com/in/davidb",
+  },
+  {
+    name: "Sayan Dutta",
+    role: "Content Team Lead",
+    qua: "Mr Content",
     imageUrl: "/placeholder.svg?height=100&width=100",
     profileImage: "/profile-placeholder.svg?height=200&width=200",
     githubUrl: "https://github.com/davidb",
@@ -59,7 +77,7 @@ export default function Component() {
         <h2 className="text-5xl font-semibold text-center mt-10 mb-12">
           Meet Our Core Team
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
           {teamMembers.map((member, index) => (
             <div
               key={index}
