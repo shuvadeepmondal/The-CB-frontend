@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../ui/button';  // Importing the button from ShadCN UI
 import logo from "../../assets/Logo.png";
+import DarkModeToggle from './DarkModeToggle';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -60,6 +61,7 @@ const Navbar: React.FC = () => {
               </svg>
             )}
           </button>
+          <DarkModeToggle/>
         </div>
         <div
           className={`items-center justify-between w-full lg:flex lg:w-auto lg:order-1 ${isOpen ? 'block' : 'hidden'}`}
